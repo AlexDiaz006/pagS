@@ -31,10 +31,7 @@
       to { transform: translateY(0); opacity: 1; }
     }
 
-    .volver {
-      position: absolute;
-      top: 15px;
-      left: 15px;
+    .volver, .siguiente {
       background: rgba(128,0,128,0.7);
       color: white;
       padding: 8px 15px;
@@ -45,10 +42,16 @@
       transition: all 0.3s ease;
     }
 
-    .volver:hover {
+    .volver:hover, .siguiente:hover {
       background: rgba(128,0,128,1);
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(255,255,255,0.6);
+    }
+
+    .volver {
+      position: absolute;
+      top: 15px;
+      left: 15px;
     }
 
     .contenedor {
@@ -94,6 +97,10 @@
       box-shadow: 0 0 12px rgba(128,0,128,0.7);
     }
 
+    .boton-siguiente {
+      margin-top: 20px;
+    }
+
     footer {
       margin-top: 30px;
       padding: 15px;
@@ -105,35 +112,29 @@
 </head>
 <body>
   <header>
-    💌 Carta para Susana
+     Cartas para vos 💌
     <a href="index.html" class="volver">⬅ Volver</a>
   </header>
 
   <div class="contenedor">
     <div class="carta">
-      (PORFAVOR BAJA AL FINAL DE LA PAGINA Y DALE A REPRODUCIR LA CANCION, el chiste es que suene mientras lees)
-      
-
-
-
-      Hola amor,antes que nada, quería regalarte este rincón digital para recordarte lo importante que sos para mí.
-      Cada palabra la estoy pensando para mostrarte todo lo que siento.
-      espero de corazon que estes pasando un dia genial, aunque si te soy honesto, espero que estes boludeando en tu cama aburrida antes que llorar por algo y refugiarte en esta carta
-      no me gusta que llorando vengas a ver estos detalles, por favor, si estas peleada conmigo, te pido perodn yo ahora por mis futuras tonteras y te pido que intentemos otra vez la paz que sabemos mantener.
-      Quiero que sepas que cada momento a tu lado es un regalo que atesoro profundamente, aunque sea pelear, reirnos, amarnos, todo! todo, absolutamente todo es un regalo cuando estoy con vos, porque lo hago con vos y no con una peloduro cualquiera
-      te amo chiquita, desde que me levanto hasta que me duermo siempre se me colan sonrisas disimuladas porque se que todo lo que hago en el dia, te tiene involucrada, a vos, por quien daria todo y un poco mas por cumplir todas esas fantasias que me soles contar.
-      no sabes las ganas que tengo de vivirlas con vos, de estar todos los dias a tu lado como vos lo mereces, suso, una mujer como vos merece el mundo y las estrellas cercanas, mentira sjdsj, mereces el universo entero amor, solamente con eso podria mostarte un poco la cantidad de amor que hay en mi corazon por vos
-      solamente asi, podria darte un poco de agradecimiento por siempre estar, por querer cambiar, por ser y buscar ser cada dia la mejor version de Susana que puede existir, solamente para mi, no olvidare nunca este gesto de cambiar que haces por mi
-      y no sera por culpa, creeme que no, esto que hago y esto que me hace estar es mmi coraon desbordando amor reclamando tu presencia, y la mejor forma que tengo apra hacerlo es asi, estando, viviendo buscando ser el hombre con el que soñas, con el que te vas a casar, el que mereces
-      Te amo con todo mi ser, Susana.
-      Espero que al leer esto, sientas lo especial que sos en mi vida. 💜
-      (es poco pero quiero seguir haciendo los otros htmls, ahora solamente te doy una muestra de una carta que con el tiempo seguire actualizando para que leas jj)
+      Hola amor,antes que nada, quería regalarte este rincón digital para recordarte lo importante que sos para mí. Cada palabra la estoy pensando para mostrarte todo lo que siento. 
+      Espero de corazon que estes pasando un dia genial, aunque si te soy honesto, espero que estes boludeando en tu cama aburrida antes que llorar por algo y refugiarte en esta carta, no me gusta que llorando vengas a ver estos detalles, por favor, si estas peleada conmigo, te pido perodn yo ahora por mis futuras tonteras y te pido que intentemos otra vez la paz que sabemos mantener. 
+      Quiero que sepas que cada momento a tu lado es un regalo que atesoro profundamente, aunque sea pelear, reirnos, amarnos, todo! todo, absolutamente todo es un regalo cuando estoy con vos, porque lo hago con vos y no con una peloduro cualquiera.
+      Te amo chiquita, desde que me levanto hasta que me duermo siempre se me colan sonrisas disimuladas porque se que todo lo que hago en el dia, te tiene involucrada, a vos, por quien daria todo y un poco mas por cumplir todas esas fantasias que me soles contar. no sabes las ganas que tengo de vivirlas con vos, de estar todos los dias a tu lado como vos lo mereces, suso, una mujer como vos merece el mundo y las estrellas cercanas, mentira sjdsj, mereces el universo entero amor, solamente con eso podria mostarte un poco la cantidad de amor que hay en mi corazon por vos solamente asi, 
+      podria darte un poco de agradecimiento por siempre estar, por querer cambiar, por ser y buscar ser cada dia la mejor version de Susana que puede existir, solamente para mi, no olvidare nunca este gesto de cambiar que haces por mi y no sera por culpa, creeme que no, esto que hago y esto que me hace estar es mmi coraon desbordando amor reclamando tu presencia, y la mejor forma que tengo para hacerlo es asi, estando, viviendo y buscando ser el hombre con el que soñas, con el que te vas a casar, el que mereces.
+      Te amo con todo mi ser, Susana. Espero que al leer esto, sientas lo especial que sos en mi vida. 💜
     </div>
 
     <video autoplay loop controls>
       <source src="audio/cancion.mp4" type="video/mp4">
       Tu navegador no soporta video.
     </video>
+
+    <!-- Botón siguiente -->
+    <div class="boton-siguiente">
+      <a href="carta2.html" class="siguiente">Siguiente ➡</a>
+    </div>
   </div>
 
   <footer>
