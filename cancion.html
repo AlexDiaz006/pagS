@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuestra Canción 💜</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: linear-gradient(180deg, #1a001a, #4b004b);
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      padding: 20px;
+      font-size: 1.8em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      animation: slideDown 1.5s ease;
+      position: relative;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .volver {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: rgba(128,0,128,0.7);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9em;
+      box-shadow: 0 0 8px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .volver:hover {
+      background: rgba(128,0,128,1);
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,255,255,0.6);
+    }
+
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 900px;
+      animation: fadeInUp 2s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    video {
+      width: 70%;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(128,0,128,0.7);
+    }
+
+    .info {
+      background: rgba(0,0,0,0.5);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(128,0,128,0.6);
+      font-size: 1.1em;
+      color: #e6e6fa;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: rgba(0,0,0,0.6);
+      font-size: 1.1em;
+      border-top: 2px solid #800080;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🎶 Nuestra Canción
+    <a href="index.html" class="volver">⬅ Volver</a>
+  </header>
+
+  <div class="contenedor">
+    <video autoplay loop controls>
+      <source src="audio/cancion2.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+
+    <div class="info">
+Sabés amor, nuestra canción tiene historia. "Can't Help Falling in Love" la cantó Elvis allá por 1961, en una peli que se llamaba Blue Hawaii. La melodía no salió de la nada, está inspirada en una canción francesa viejísima, de 1784, que se llama "Plaisir d’amour". O sea, ya desde hace siglos se viene diciendo lo mismo: que cuando el amor pega, no hay forma de frenarlo.
+
+La letra arranca con esa frase que me mata: "Wise men say, only fools rush in". Los sabios dicen que solo los tontos se apuran… pero Elvis, y yo también (jaja)), confesamos que no podemos evitarlo, que cuando el corazón manda, uno se tira de cabeza. Y eso es lo que me pasa con vos, Susana. No importa lo que digan, yo no puedo evitar enamorarme cada día más.
+
+Lo loco es que en la peli Elvis la canta para la abuela del personaje, pero con el tiempo se volvió su canción más romántica, la que todos reconocen como un himno al amor verdadero. Y ahora, para mí, es nuestra canción. Porque cada vez que suena, recuerdo que vos me hiciste conocerla en esa playlist que me armaste, ahora siento que habla de nosotros, de lo inevitable que es que yo te ame, de que no hay forma de que me saque de la cabeza que sos la mujer con la que quiero todo.
+
+Así que mientras la escuchás, pensá que no es solo Elvis cantando: soy yo diciéndote que no puedo evitar enamorarme de vos, una y otra vez, todos los días de mi vida. 💜
+
+    </div>
+  </div>
+
+  <footer>
+    Con todo mi cariño, Alex
+  </footer>
+</body>
+</html>
