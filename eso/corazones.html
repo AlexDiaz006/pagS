@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Constelación en forma de corazón 💜</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at bottom, #1a001a, #000000);
+      color: #fff;
+      height: 100vh;
+      overflow: hidden;
+      animation: fadeIn 2s ease; /* animación de entrada */
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .volver {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: rgba(128,0,128,0.7);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9em;
+      box-shadow: 0 0 8px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    .volver:hover {
+      background: rgba(128,0,128,1);
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,255,255,0.6);
+    }
+
+    .estrella {
+      position: absolute;
+      border-radius: 50%;
+      background: white;
+      animation: parpadeo 2s infinite alternate;
+    }
+
+    /* Estrellas de fondo */
+    .fondo {
+      width: 4px;
+      height: 4px;
+      opacity: 0.4;
+      box-shadow: 0 0 6px rgba(255,255,255,0.5);
+    }
+
+    /* Estrellas del corazón */
+    .corazon {
+      width: 12px;
+      height: 12px;
+      box-shadow: 0 0 12px rgba(255,255,255,0.9);
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    @keyframes parpadeo {
+      from { opacity: 0.5; }
+      to { opacity: 1; }
+    }
+
+    .mensaje {
+      position: absolute;
+      background: rgba(0,0,0,0.7);
+      color: #e6e6fa;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 0.9em;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .corazon:active .mensaje {
+      opacity: 1; /* en celular, al tocar aparece */
+    }
+
+    /* Luna */
+    .luna {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(circle, #fff 60%, #ddd 80%, transparent 100%);
+      border-radius: 50%;
+      box-shadow: 0 0 25px rgba(255,255,255,0.8);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 15px;
+      background: rgba(0,0,0,0.6);
+      font-size: 1.1em;
+      border-top: 2px solid #800080;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="volver">⬅ Volver</a>
+
+  <!-- Luna -->
+  <div class="luna"></div>
+
+  <!-- Estrellas de fondo (25 aprox) -->
+  <div class="estrella fondo" style="top:5%; left:10%;"></div>
+  <div class="estrella fondo" style="top:8%; left:30%;"></div>
+  <div class="estrella fondo" style="top:12%; left:70%;"></div>
+  <div class="estrella fondo" style="top:15%; left:50%;"></div>
+  <div class="estrella fondo" style="top:20%; left:80%;"></div>
+  <div class="estrella fondo" style="top:25%; left:25%;"></div>
+  <div class="estrella fondo" style="top:28%; left:60%;"></div>
+  <div class="estrella fondo" style="top:32%; left:40%;"></div>
+  <div class="estrella fondo" style="top:35%; left:75%;"></div>
+  <div class="estrella fondo" style="top:40%; left:15%;"></div>
+  <div class="estrella fondo" style="top:45%; left:55%;"></div>
+  <div class="estrella fondo" style="top:50%; left:35%;"></div>
+  <div class="estrella fondo" style="top:55%; left:65%;"></div>
+  <div class="estrella fondo" style="top:60%; left:20%;"></div>
+  <div class="estrella fondo" style="top:62%; left:85%;"></div>
+  <div class="estrella fondo" style="top:68%; left:45%;"></div>
+  <div class="estrella fondo" style="top:70%; left:10%;"></div>
+  <div class="estrella fondo" style="top:72%; left:55%;"></div>
+  <div class="estrella fondo" style="top:75%; left:30%;"></div>
+  <div class="estrella fondo" style="top:80%; left:70%;"></div>
+  <div class="estrella fondo" style="top:85%; left:40%;"></div>
+  <div class="estrella fondo" style="top:88%; left:20%;"></div>
+  <div class="estrella fondo" style="top:90%; left:60%;"></div>
+  <div class="estrella fondo" style="top:92%; left:80%;"></div>
+  <div class="estrella fondo" style="top:95%; left:50%;"></div>
+
+  <!-- Constelación en forma de corazón -->
+  <div class="estrella corazon" style="top:20%; left:40%;">
+    <div class="mensaje">Amo tu pelo ruludo ✨</div>
+  </div>
+  <div class="estrella corazon" style="top:20%; left:60%;">
+    <div class="mensaje">Tu humor me mata de risa 🌙</div>
+  </div>
+  <div class="estrella corazon" style="top:30%; left:30%;">
+    <div class="mensaje">Tus detalles me derriten el corazón 💫</div>
+  </div>
+  <div class="estrella corazon" style="top:30%; left:70%;">
+    <div class="mensaje">Tu sensibilidad ablanda hasta el corazón más duro ⭐</div>
+  </div>
+  <div class="estrella corazon" style="top:50%; left:25%;">
+    <div class="mensaje">Tu amor es contagiablemente abrumador 💜</div>
+  </div>
+  <div class="estrella corazon" style="top:50%; left:75%;">
+    <div class="mensaje">Sos mi constelación favorita 🌌</div>
+  </div>
+  <div class="estrella corazon" style="top:70%; left:40%;">
+    <div class="mensaje">Cada día contigo es una estrella nueva ✨</div>
+  </div>
+  <div class="estrella corazon" style="top:70%; left:60%;">
+    <div class="mensaje">Siempre serás mi norte ⭐</div>
+  </div>
+  <div class="estrella corazon" style="top:85%; left:50%;">
+    <div class="mensaje">Tu sonrisa ilumina mi universo 💜</div>
+  </div>
+
+  <footer>
+    Con todo mi cariño, Alex
+  </footer>
+</body>
+</html>
