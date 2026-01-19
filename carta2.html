@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>18/01/26</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      background-color: #1b1b1b;
+      color: #d8cce2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes pulseShadow {
+      0% { box-shadow: 0 0 10px rgba(128, 0, 128, 0.3); }
+      50% { box-shadow: 0 0 20px rgba(128, 0, 128, 0.6); }
+      100% { box-shadow: 0 0 10px rgba(128, 0, 128, 0.3); }
+    }
+
+    header {
+      margin-top: 40px;
+      font-size: 2em;
+      font-weight: bold;
+      color: #c2a3d1;
+      border-bottom: 2px solid #5e4b6b;
+      padding-bottom: 10px;
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+      animation: pulseShadow 4s infinite;
+    }
+
+    .volver {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #3a2c3f;
+      color: #e0d6ec;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9em;
+      border: 1px solid #6e5a7a;
+    }
+    .volver:hover {
+      background-color: #5e4b6b;
+    }
+    video {
+      flex: 1;
+      width: 70%;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(128,0,128,0.7);
+    }
+    .carta {
+      background-color: #2a2a2a;
+      border: 1px solid #5e4b6b;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 40px 0;
+      max-width: 800px;
+      line-height: 1.6;
+      font-size: 1.1em;
+      box-shadow: 0 0 10px rgba(80, 60, 90, 0.5);
+      animation: fadeInUp 2s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 0.9em;
+      color: #a892b3;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="volver">⬅ Volver</a>
+  <header>18/01/26</header>
+
+  <div class="carta">
+    Tilina mía,
+    <br><br>
+    Hoy recorde lo que paso hace unos dias, y por eso, ahora que estoy más clarocon mis ideas y más renovado, te escribo esta carta para cerrar el tema este como a vos te gusta: con amor (y cartas). No quiero que quede flotando, ni que se pierda en la nada. Quiero que lo tengas, que lo leas cuando quieras, y que puedas sentir lo que ahora ahora, siento yo.
+    <br><br>
+    Perdón por lo que pasó hace unos días. La pelea fue fea, y sé que te dolió verme seguir a esas chicas que conocí en la misión. Pensás que las tengo para reemplazarte, o que me las busco, pero no es así. No hay nadie que pueda ocupar el lugar que vos tenes como YO quiero, y aunque exista, no la quiero. Se estás buscando ayuda, y yo entiendo y amo eso. Pero también me duele. Me duele que lo vivas así, que te lastime, y haga sentir que nos alejamos.
+    <br><br>
+    Esta carta nacio de ese dolor en su momento, pero hoy la terminare con la calma que tengo hoy. Porque por primera vez en mucho tiempo tengo algo que no tenía: tiempo y privacidad a la vez. Y eso me permite centrarme en esto. No es que lo haya olvidado, simplemente no podía entrar y centrarme como me gusta en proyectos que me demandan creatividad como lo hace esta pagina (a proposito, te gusta como la rehice?personalmente me gusta, pero nose vos decime, la estoy haciendo para vos). Pero ahora sí, y por eso te escribo.
+    <br><br>
+    Las cartas las voy a ir actualizando en la medida de mi tiempo. No es que no quiera, es que no siempre puedo. Pero cuando pueda, lo voy a hacer. Porque pienso en vos todos los días(aunque no lo creas). Porque aunque mi círculo social se expanda, con amigos y amigas, vos a partir de este ultimo tramo que tenemos, vas a tener SIEMPRE un lugar que respeto. No voy a dejar que se me insinúen, y si alguna vez pasa, voy poner límites. Porque vos sos mi novia, y merecés un lugar alto y brilloso, como el que ocupás en mi corazón.
+    <br><br>
+    Te pienso, te extraño, y te escribo con la certeza de que sos mia. La única novia que quiero(y tengo). La que voy a cuidar y respetar, ahora mas que nunca.
+    <br><br>
+    💜 Con todo mi cariño,
+    <br>
+    Alex
+  </div>
+  
+    <video autoplay loop controls>
+      <source src="audio/cancion.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  <footer>
+    Página reinventada!!! avisame si te gusta y si lees esto decime top 3 canciones para cartas.
+  </footer>
+</body>
+</html>
